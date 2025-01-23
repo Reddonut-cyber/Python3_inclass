@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def f(x):
-    return x*np.sin(2*x)
+    return x**2
 
 x = np.linspace(-100, 100, 1000)
-plt.plot(f(x), color='red', marker='o', markersize=1, linestyle='dashed')
+plt.plot(f(x), color='green', marker='o', markersize=1)
 plt.xlabel('x')
 plt.ylabel('f(x)')
-plt.title('f(x) = x*sin(2x)')
+plt.title('f(x) = x**2')
 plt.grid(True)
 plt.legend()
 plt.show()
